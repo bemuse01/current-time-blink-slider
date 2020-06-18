@@ -1,0 +1,62 @@
+@keyframes blink{
+    0%{opacity: 1}
+    50%{opacity: 0}
+    100%{opacity: 1}
+}
+@keyframes entering{
+    0%{
+        transform: translate(-75%, 0px) scale(0.5);
+    }
+    100%{
+        transform: translate(0px, 0px) scale(1);
+    }
+}
+
+
+.time-slide-enter-active{
+    animation: blink 0.06s 0.04s 3 forwards;
+    transition: all 0.2s;
+}
+.time-slide-leave-active{
+    transition: all 0.25s;
+}
+.time-slide-enter{
+    transform-origin: center;
+    transform: translate(-50%, 0px) scale(0.75);
+    opacity: 0;
+}
+.time-slide-leave-to{
+    transform-origin: center;
+    transform: translate(50%, 0px) scale(0.75);
+    opacity: 0;
+}
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background: black;
+    overflow: hidden;
+    color: white;
+}
+div#wrap{
+    width: 100%;
+    font-size: 6vh;
+    text-align: center;
+}
+div#times{
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 0px);
+    width: calc(100vh * 80 / 1080);
+    height: auto;
+}
+div#times div{
+    position: absolute;
+    width: calc(100vh * 80 / 1080);
+    height: auto;
+    text-align: center;
+}

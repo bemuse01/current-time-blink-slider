@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="assets/vue.min.js"></script>
+        <link href="assets//index_25/css/main.css" rel="stylesheet" type="text/css">
+    </head>
+    <body>
+        <div id="wrap">
+            <transition-group name="time-slide" tag="div" id="times">
+                <div
+                    v-for="i in arr"
+                    :key="i.id"
+                    :style="i.style"
+                    v-show="i.show"
+                ><span>{{i.text}}</span>
+                </div>
+            </transition-group>
+        </div>
+        <script src="assets/index_25/js/main.js"></script>
+    </body>
+</html>
