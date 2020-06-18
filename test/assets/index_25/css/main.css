@@ -14,15 +14,15 @@
 
 
 .time-slide-enter-active{
-    animation: blink 0.06s 0.04s 3 forwards;
-    transition: all 0.2s;
+    animation: blink 0.08s 0.04s 3 forwards;
+    transition: all 0.25s;
 }
 .time-slide-leave-active{
     transition: all 0.25s;
 }
 .time-slide-enter{
     transform-origin: center;
-    transform: translate(-50%, 0px) scale(0.75);
+    transform: translate(-75%, 0px) scale(1);
     opacity: 0;
 }
 .time-slide-leave-to{
